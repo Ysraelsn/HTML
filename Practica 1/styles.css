@@ -10,13 +10,28 @@ nav{
     padding: 0 1rem;
     
 }
+
 .nav-links{
     display: flex;
-    gap: 1rem;
+    align-items: center;
 }
 
-.navbar-logo{
+.nav-menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 4rem;
+    right: 0;
+    background-color: goldenrod;
+    width: 100%;
+    text-align: center;
+    color:#256225
     
+}
+.nav-links.active .nav-menu{
+    display: flex;
+}
+.navbar-logo{
     height: 4rem;
     width: 4rem;
     
@@ -26,7 +41,21 @@ nav{
     width: 100%;
     height: auto;
 }
-
+@media (min-width: 768px) {
+    .nav-links {
+        flex-direction: row;
+    }
+    .menu-btn {
+        display: none; /* Ocultar el botón de menú */
+    }
+    .nav-menu {
+        display: flex;
+        position: static;
+        flex-direction: row;
+        width: auto;
+        background-color: transparent;
+    }
+}
 nav a{
     color:#ffffff;
     text-align: center;
@@ -48,6 +77,18 @@ nav a.active{
 
 nav a.active:hover{
     color: #ffffff;
+}
+
+.menu-btn{
+    border: none;
+    outline: none;
+    color: goldenrod;
+    padding: 14px 15px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+    cursor: pointer;
+
 }
 
 
