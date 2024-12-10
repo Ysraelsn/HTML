@@ -22,7 +22,7 @@ nav{
     position: absolute;
     top: 4rem;
     right: 0;
-    background-color: goldenrod;
+    background-color: wheat;
     width: 100%;
     text-align: center;
     color:#256225
@@ -65,12 +65,12 @@ nav a{
     
 }
 nav a:hover{
-    color:darkgoldenrod
+    color:goldenrod;
 }
 
 
 nav a.active{
-    color: darkgoldenrod;
+    color: goldenrod;
     font-style: italic;
 
 }
@@ -119,4 +119,36 @@ footer .footer-links{
     padding-right: 2rem;
     gap: 1em;
     
+}
+main{
+    gap:1rem;
+}
+h2{
+    font-size: 14px;
+    text-align: justify;
+}
+section.title{
+    background-color: wheat;
+    color: black;
+}
+section.content{
+    background-color: #256225;
+    color: wheat;
+    display: block;
+    padding: 1em;
+}
+section.content h2{
+    font-size: 14px;
+    color: white;
+}
+section.gallery{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4em;
+    margin-bottom: 4em;
+}
+section.gallery img{
+    height: 250px;
+    width: 250px;
 }
